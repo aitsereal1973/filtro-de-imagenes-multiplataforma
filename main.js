@@ -14,7 +14,7 @@ function createWindow() {
   win.loadFile('index.html');
 }
 
-// When the app is ready, create the window
+// When the app is ready, create the main application window
 app.whenReady().then(createWindow);
 
 // Close the application when all windows are closed, except on macOS
