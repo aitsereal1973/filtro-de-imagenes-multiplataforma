@@ -1,0 +1,16 @@
+{
+  "name": "filtro-de-imagenes-multiplataforma",
+  "version": "1.0.0",
+  "description": "Una aplicación para aplicar filtros a imágenes en múltiples plataformas.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^25.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0"
+  }
+}
