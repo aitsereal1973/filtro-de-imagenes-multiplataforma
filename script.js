@@ -24,24 +24,28 @@ imageInput.addEventListener('change', (event) => {
 // Filtros de imagen
 // Filtro en blanco y negro
 document.getElementById('bwFilter').addEventListener('click', () => {
+    // Aplicar filtro en blanco y negro
     context.filter = 'grayscale(100%)';
     context.drawImage(canvas, 0, 0);
 });
 
 // Filtro sepia
 document.getElementById('sepiaFilter').addEventListener('click', () => {
+    // Aplicar filtro sepia
     context.filter = 'sepia(100%)';
     context.drawImage(canvas, 0, 0);
 });
 
 // Filtro de desenfoque
 document.getElementById('blurFilter').addEventListener('click', () => {
+    // Aplicar filtro de desenfoque
     context.filter = 'blur(5px)';
     context.drawImage(canvas, 0, 0);
 });
 
 // Descargar la imagen filtrada
 document.getElementById('download').addEventListener('click', () => {
+    // Crear un enlace para descargar la imagen filtrada
     const link = document.createElement('a');
     link.download = 'imagen_filtrada.png';
     link.href = canvas.toDataURL();
